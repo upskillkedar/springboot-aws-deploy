@@ -12,4 +12,14 @@ public class TestController {
     public String getData() {
         return "First Message from AWS ECS";
     }
+
+    @GetMapping("/message")
+    public String getMessage() {
+        return "Second Message from AWS ECS";
+    }
+
+    @GetMapping("/test")
+    public String getTestMessage() {
+        return "Test Message from AWS ECS";
+    }
 }
